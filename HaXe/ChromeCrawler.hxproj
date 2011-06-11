@@ -21,7 +21,7 @@
     <option flashStrict="False" />
     <option mainClass="Main" />
     <option enabledebug="False" />
-    <option additional="-lib chrome-extension&#xA;-lib jQueryExtern&#xA;-lib hxJson2" />
+    <option additional="-lib chrome-extension&#xA;-lib jQueryExtern&#xA;-lib hxJson2&#xA;-lib raphaelExtern" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>

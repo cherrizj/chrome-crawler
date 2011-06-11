@@ -1,4 +1,4 @@
-package crawler;
+package crawler.crawling;
 import utils.URLParser;
 
 /**
@@ -6,7 +6,7 @@ import utils.URLParser;
  * @author mikecann.co.uk
  */
 
-class HTMLParser 
+class CrawledHTMLParser 
 {
 	public var html : String;
 	public var pageURL : URLParser;
