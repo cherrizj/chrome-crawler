@@ -4,13 +4,21 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 <link rel="stylesheet" type="text/css" href="crawler.css">
 </head>
-<body>
+<body>	
 
 	<script src="lib/jquery-1.5.2.js"></script>
+	<script src="lib/Stats.js"></script>
+	<script src="lib/raphael-min.js"></script>
 	<script src="ChromeCrawler.js"></script>	
 	
-
-	<!--<img src="images/icon58.png" id="icon" />-->
-	Chrome Crawler Instnace
+	<script type="text/javascript"> 
+		container = document.createElement( 'div' );	
+		document.body.appendChild( container );
+		var stats = new Stats();
+		container.appendChild( stats.domElement );
+		setInterval( function () { stats.update(); }, 1000 / 60 );
+	</script>
+	
+	<div id="renderTarget" class="fullscreen" />
 	
 </body>

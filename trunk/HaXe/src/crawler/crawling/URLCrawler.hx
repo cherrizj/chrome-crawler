@@ -1,4 +1,4 @@
-package crawler;
+package crawler.crawling;
 
 import JQuery;
 import js.Lib;
@@ -33,7 +33,7 @@ class URLCrawler
 		
 		var html : String = data;
 		
-		var parser : HTMLParser = new HTMLParser(URLParser.parse(url),html);
+		var parser : CrawledHTMLParser = new CrawledHTMLParser(URLParser.parse(url),html);
 		parser.parse();
 		
 		
