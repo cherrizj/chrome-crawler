@@ -5,4 +5,19 @@ body
 	overflow-x: hidden;
 	margin: 0px;
 	overflow: hidden;
+	height:100%; 
+}
+
+fullscreen
+{ 
+	margin:0; 
+	padding:0; 
+	height:100%; 
+}
+
+statsWindow
+{
+	position: albolute;
+	left: 0px;
+	right: 0px;
 }

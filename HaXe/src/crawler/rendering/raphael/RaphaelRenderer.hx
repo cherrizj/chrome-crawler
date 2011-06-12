@@ -1,4 +1,4 @@
-package crawler.rendering;
+package crawler.rendering.raphael;
 import crawler.crawling.URLCrawler;
 import haxe.Timer;
 import js.Lib;
@@ -9,7 +9,7 @@ import Raphael;
  * @author mikecann.co.uk
  */
 
-class RaphelRenderer 
+class RaphaelRenderer 
 {	
 	// Privates
 	private var _crawler : URLCrawler;
