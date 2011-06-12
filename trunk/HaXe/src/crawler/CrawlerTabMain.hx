@@ -1,6 +1,7 @@
 package crawler;
 import crawler.crawling.URLCrawler;
-import crawler.rendering.RaphelRenderer;
+import crawler.rendering.raphael.RaphaelRenderer;
+import crawler.rendering.three.ThreeRenderer;
 import hxjson2.JSON;
 import js.Lib;
 
@@ -13,16 +14,16 @@ class CrawlerTabMain
 {
 	// Privates
 	private var _crawler : URLCrawler;
-	private var _renderer : RaphelRenderer;
+	private var _renderer : ThreeRenderer;
 
 	public function new() 
 	{
 		CrawlerSettings.startingUrl = Lib.window.location.search.substr(5);		
 		_crawler = new URLCrawler(CrawlerSettings.startingUrl);		
 
-		_renderer = new RaphelRenderer(_crawler);
+		_renderer = new ThreeRenderer(_crawler);
 		
 		//_crawler.beginCrawling();
-		_renderer.beginRendering();
+		_renderer.beginRendering(new JQuery("#renderTarget")[0]);
 	}	
 }

@@ -1,4 +1,4 @@
-package crawler.rendering;
+package crawler.rendering.raphael;
 import Raphael;
 
 /**
